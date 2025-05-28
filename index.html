@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rice Bowl Sobat</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>  
+        *{
+            text-decoration: none;
+        }
+
+    body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #05284e;
+    
+    
+    }
+
+    .bg{
+      background-color: #05284e;
+      padding-bottom: 100px;
+    }
+    
+     .bg2{
+      background-color: #05284e;
+      padding-bottom: 100px;
+    }
+
+    .navbar {
+    background-color: #d0c05b;
+    padding: 10px ;
+    }
+
+    .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+
+    }
+
+    .logo {
+    color: #05284e;
+    font-size: 25px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);    
+
+    }
+
+    .gambar{
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        margin-top: 80px;
+    }
+
+    .img{
+       
+        width: 300px;
+        height: 300px;
+        border-radius: 15px;
+        box-shadow: 5px 5px 10PX #d0c05b;
+
+    }
+
+    .img:hover{
+        transform:scale(1.1) ;
+        opacity: 1;
+    }
+
+    .text{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        color: #d0c05b;
+        margin-top: 50px;
+
+    }
+
+    .harga{
+      color: #d0c05b;
+    }
+
+    .quantity_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 20px 0;
+        gap: 15px;
+    }
+
+    .quantity_button {
+        background-color: #d0c05b;
+        color: #05284e;
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        border: none;
+        font-size: 20px;
+        font-weight: bold;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    .quantity_button:hover {
+        transform: scale(1.1);
+        background-color: #b8a84f;
+    }
+
+    .quantity_button:disabled {
+        background-color: #888;
+        cursor: not-allowed;
+        transform: none;
+    }
+
+    .quantity_display {
+        background-color: #d0c05b;
+        color: #05284e;
+        padding: 10px 20px;
+        border-radius: 10px;
+        font-size: 18px;
+        font-weight: bold;
+        min-width: 50px;
+        text-align: center;
+    }
+
+    .price-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin: 10px 0;
+    }
+
+    .unit-price {
+        color: #d0c05b;
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+
+    .total_price {
+        color: #d0c05b;
+        font-size: 24px;
+        font-weight: bold;
+    }
+
+    .z{
+       
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     
+    p{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    button{
+        background-color: #d0c05b;
+        color: #05284e;
+        width: 150px;
+        height: 30px;
+        border-radius: 15px;
+        font-size: large;
+        border: none;
+
+    }
+
+    button:hover{
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    
+    footer{
+      bottom: 0;
+    }
+    
+    .footer{
+      background-color:#d0c05b; 
+      width: 100%;
+      padding-top: 5px;
+    }
+    
+    
+    h3{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .L{
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .A{
+      width: 35px;
+      height: 35px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .Y{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .F{
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .S{
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+
+    .footer-1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 15px;
+      padding-bottom: 20px;
+    }
+
+
+    .logo-p{
+      display: flex;
+      justify-content: right;
+      align-items: center;
+      margin-left: auto;
+    }
+
+    .logo-r{
+        width: 60px;
+        height: 60px;
+    }
+
+
+    h3{
+        color: #05284e;
+        padding-bottom: 10px;
+    }
+
+    .textpj{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 30px;
+                
+    }
+
+    .textc{
+      color: #d0c05b;
+      font-size: larger;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    .D{
+      margin-top: 155px;
+      color: #d0c05b;
+    }
+
+    .M{
+      padding-top: 100px;
+      color: #d0c05b;
+    }
+
+       .maps1{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 100px;
+
+       }
+
+         iframe{
+            width: 800px;
+            height: 400px;
+            border-radius: 30px;
+            opacity: 0,5;
+            border: none;
+            transition: 0,3s;
+        }
+
+        iframe:hover{
+            transform: scale(1.1);
+            opacity: 1;
+        }
+
+        .G{
+           margin-top: 135PX;
+           background-color: #d0c05b;
+           height: 5PX;
+        }
+    </style>
+</head>
+<body>
+    <div class="bg">
+    <nav class="navbar">
+        <div class="container">
+            <h1 class="logo">Rice Bowl Sobat</h1>
+            <div class="logo-p">
+                <img src="WhatsApp Image 2025-05-27 at 17.57.29.jpeg" class="logo-r">
+            </div>
+        </div>
+        </nav>
+        
+        <div class="gambar">
+            <img src="https://img.mbizmarket.co.id/products/thumbs/800x800/2021/03/17/355d9a48679a162794e31f39f9286556.jpg" class="img">
+             </div>
+             
+        <h2 class="text">Rice Bowl Sobat</h2>
+        
+        <div class="price-container">
+            <div class="total_price" id="totalPrice">Rp. 12.000</div>
+        </div>
+
+        <div class="quantity_container">
+            <button class="quantity_button" id="decreaseBtn" onclick="decreaseQuantity()">-</button>
+            <div class="quantity_display" id="quantityDisplay">1</div>
+            <button class="quantity_button" id="increaseBtn" onclick="increaseQuantity()">+</button>
+        </div>
+
+        <a href="#" class="z" id="buyButton"><button><b>Beli</b></button></a>
+        </div>
+    
+        <div class="G"></div>
+
+        <div class="bg1">
+        <div class = "D">
+          <h2><center>Detail Produk</center></h2>
+        </div>
+
+    <div class="textpj">
+        <h3 class = "textc"><center>Rice Bowl Ayam Katsu hidangan lezat yang menggabungkan nasi pulen hangat dengan irisan ayam katsu renyah yang dibalut tepung krispi golden brown, disajikan bersama saus spesial dan pelengkap segar. Setiap suapan memberikan paduan tekstur renyah di luar dan juicy di dalam, dipadukan dengan saus katsu yang gurih-manis serta sayuran fresh untuk keseimbangan rasa.</h3></center>
+    </div>
+    </div>
+
+     <div class="G"></div>
+
+    <div class="bg2"> 
+    <div class = "M">
+          <h2><center>Maps</center></h2>
+        </div>
+
+         <div class="maps1">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3505.412696121591!2d107.4560278!3d-6.408805600000001!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zNsKwMjQnMzEuNyJTIDEwN8KwMjcnMjEuNyJF!5e1!3m2!1sid!2sid!4v1732929614865!5m2!1sid!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+      
+      <footer class="footer">
+        <h3>CONTACT US</h3>
+        <div class="footer-1">
+          <a href="https://www.instagram.com/rice.bowlsobat?igsh=YWFtMDNkcTZpd2tj"><img src="instagram.png" class="L"></a>
+          <a href="https://www.tiktok.com/@ricebowlsobat?_t=ZS-8wCR5uYWyLh&_r=1"><img src="tik-tok.png" class="A"></a>
+          <a href="https://youtube.com/@ricebowlsobat?si=u77gArr_t7RfbAqb"><img src="youtube.png" class="Y"></a>
+          <a href="https://www.facebook.com/profile.php?id=61575810771430"><img src="facebook.png" class="F"></a>
+            <a href="https://id.shp.ee/9ERRtys"><img src="https://www.pngmart.com/files/12/Shopee-Logo-Transparent-Background.png" class="S"></a>
+        </div>
+      </footer>
+
+      <script>
+        let quantity = 1;
+        const unitPrice = 12000;
+
+        function updateDisplay() {
+            document.getElementById('quantityDisplay').textContent = quantity;
+            const totalPrice = quantity * unitPrice;
+            document.getElementById('totalPrice').textContent = 'Rp. ' + totalPrice.toLocaleString('id-ID');
+            const message = `Hallo, saya ingin memesan Rice Bowl Sobat sebanyak ${quantity} porsi dengan total harga Rp. ${totalPrice.toLocaleString('id-ID')}. Apakah produk masih tersedia?`;
+            const whatsappUrl = `https://wa.me/6285810511915?text=${encodeURIComponent(message)}`;
+            document.getElementById('buyButton').href = whatsappUrl;
+            const decreaseBtn = document.getElementById('decreaseBtn');
+            if (quantity <= 1) {
+                decreaseBtn.disabled = true;
+            } else {
+                decreaseBtn.disabled = false;
+            }
+        }
+
+        function increaseQuantity() {
+            quantity++;
+            updateDisplay();
+        }
+
+        function increaseQuantity() {
+          if (quantity < maxquantity) {
+            quantity++;
+            
+          } else {
+            alert ("maaf, maksimal pemesanan 5 porsi") ;
+                
+          }
+        }
+    
+
+        function decreaseQuantity() {
+            if (quantity > 1) {
+                quantity--;
+                updateDisplay();
+            }
+        }
+
+        updateDisplay();
+      </script>
+      
+</body>
+</html>
